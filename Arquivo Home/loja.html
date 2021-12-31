@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/download.png " type="image/x-icon">
+    <link rel="stylesheet" href="loja.css">
+    <title>Loja - G Tech</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="thumb">
+            <li onmouseover="changeImageSrc('img/running_shoes_PNG5816.png')"><img src="img/running_shoes_PNG5816.png"></li>
+            <li onmouseover="changeImageSrc('img/6-5.png')"><img src="img/6-5.png"></li>
+            <li onmouseover="changeImageSrc('img/Xiaomi-Redmi-Note-9.png')"><img src="img/Xiaomi-Redmi-Note-9.png"></li>
+            <li onmouseover="changeImageSrc('img/A21.png')"><img src="img/A21.png"></li>
+        </ul>
+        <div class="imgBox">
+            <h2>G Tech GX800</h2>
+            <img src="img/running_shoes_PNG5816.png" class="tech">
+            <ul class="size">
+                <span>Tamanho:</span>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>            
+            </ul>
+            <a href="#" class="btn">Adicionar ao Carrinho</a>
+        </div>
+    </div>
+    <script>
+        function changeImageSrc(anything){
+            document.querySelector('.tech').src = anything;
+        }
+    </script>
+</body>
+</html>

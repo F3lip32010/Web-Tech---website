@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" href="img/Logo - Web Tech.png" type="image/x-icon">
+    <title>Web Tech</title>
+    <link rel="stylesheet" href="https://cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.cass" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBRR8liPYU+WymTZP11mY9G60c7H1Zv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/Logo - Web Tech.png" class="logo"></a>
+            <div class="menu">
+                <div class="toggle"><ion-icon name="add-outline"></ion-icon></div>
+                <li style="--i:0;">
+                <a href="index.html"><ion-icon name="home-outline"></ion-icon></a>
+            </li>
+            <li style="--i:1;">
+                <a href="loja.html"><ion-icon name="card-outline"></ion-icon></a>
+            </li>
+            <li style="--i:2;">
+                <a href="#"><ion-icon name="settings-outline"></ion-icon></a>
+            </li>
+            <li style="--i:3;">
+                <a href="#"><ion-icon name="shield-checkmark-outline"></ion-icon></a>
+            </li>
+            <li style="--i:4;">
+                <a href="#"><ion-icon name="earth-outline"></ion-icon></a>
+            </li>
+            <li style="--i:5;">
+                <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+            </li>
+            <li style="--i:6;">
+                <a href="credits.html"><ion-icon name="gift-outline"></ion-icon></a>
+            </li>
+            </div>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            
+            <script>
+                let toggle = document.querySelector('.toggle');
+                let menu = document.querySelector('.menu');
+                toggle.onclick = function(){
+                    menu.classList.toggle('active')
+                }
+            </script>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Busque a <br><span>Tecnologia</span></h2>
+                <p>Nós somos a Web Tech, uma empresa que cria websites inovadores para empresas ou negócios pequenos.</p>
+                <a href="#">Saiba Mais</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/logo.png" class="gtech">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/html.png" onclick="imgSlider('img/html.png'); changeCircleColor('chocolate')"></li>
+            <li><img src="img/css.png" onclick="imgSlider('img/css.png'); changeCircleColor('aquamarine')"></li>
+            <li><img src="img/js.png" onclick="imgSlider('img/js.png'); changeCircleColor('yellow')"></li>
+        </ul>
+       </section>
+
+       <section class="services section" id="services">
+        <div class="container">
+          <div class="section-header">
+            <h3 class="title" data-title="O que eu faço">Serviços</h3>
+            <p class="text">
+              Aqui estão os serviços que fazem da parte da minha carreira profissional
+            </p>
+          </div>
+
+          <div class="cards">
+            <div class="card-wrap">
+              <img
+                src="./img/shapes/points3.png"
+                class="points points1 points-sq"
+                alt=""
+              />
+            <div class="card-wrap">
+              <div class="card" data-card="Code">
+                <div class="card-content z-index">
+                  <img src="./img/code-icon.png" class="icon" alt="" />
+                  <h3 class="title-sm">Web Development</h3>
+                  <p class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolores suscipit nobis dolore?
+                  </p>
+                  <a href="#" class="btn small">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-wrap">
+              <img
+                src="./img/shapes/points3.png"
+                class="points points2 points-sq"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    
+       <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.gtech').src = anything;
+        }
+    
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+        <ul class="sci">
+            <li><a href="#"><img src="img/facebook (2).png"></a></li>
+            <li><a href="#"><img src="img/twitter (2).png"></a></li>
+            <li><a href="#"><img src="img/instagram (2).png"></a></li>
+        </ul>
+    </section>
+</body>
+</html>
